@@ -17,6 +17,10 @@ public class testing extends Applet {
 		} catch (IOException e){
 		}
 		}
+	/**
+	 * This will hopefully make it so you can change
+	 * the position of the image 
+	 */
 	public int move(int MoveWhere){
 		return move = MoveWhere;
 		
