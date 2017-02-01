@@ -25,5 +25,5 @@ public class testing extends Applet {
 		g.drawImage(img, move, 0, null);
 	}
 	
-
+	
 }
