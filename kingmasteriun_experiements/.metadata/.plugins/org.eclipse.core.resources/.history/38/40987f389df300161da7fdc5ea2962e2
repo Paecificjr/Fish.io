@@ -11,10 +11,14 @@ public class Server {
 	
 	public static void main(String[] args) throws IOException{
 		
+		System.out.println("Starting server...");
 		serverSocket = new ServerSocket(7777);
+		System.out.println("Server started....");
 		socket = serverSocket.accept();
+		System.out.println("Connection from:" + socket.getInetAddress());
 		out = new DataOutputStream(socket.getOutputStream());
 		out.writeUTF("This is a test of java sockets.");
+		System.out.println("Data has been sent.");
 	}
 
 }
