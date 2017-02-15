@@ -12,7 +12,7 @@ public class Client_1 {
 	public static void main(String[] args)throws Exception{
 		
 		System.out.println("Connecting...");
-		socket = new Socket("localhost", 7777);
+		socket = new Socket("localhost", 7777);  /// change localhost to my ip address; want to communicate with my socket
 		System.out.println("Connection Successful");
 		in = new DataInputStream(socket.getInputStream());
 		System.out.println("Recieving Information....");

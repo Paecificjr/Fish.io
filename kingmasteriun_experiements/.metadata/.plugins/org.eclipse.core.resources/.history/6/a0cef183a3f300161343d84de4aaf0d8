@@ -4,7 +4,7 @@ import java.net.*;
 import java.io.*;
 
 
-public class Client {
+public class Client_1 {
 	
 	static Socket socket;
 	static DataInputStream in;
