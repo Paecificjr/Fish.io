@@ -24,8 +24,8 @@ public class Client_1 {
 		String test = in.readUTF();
 		System.out.println("Message from server:" + test);
 		
-		out.writeUTF("this is a a test of sending data from client to server");
-		System.out.println("Message to server sent");
+		out.writeUTF("this is a a test of sendinf data from client to server");
+		
 	}
 
 }

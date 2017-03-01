@@ -13,7 +13,7 @@ public class Client_1 {
 	public static void main(String[] args)throws Exception{
 		
 		System.out.println("Connecting...");
-		socket = new Socket("192.168.56.1", 7777);  /// change localhost to my ip address; want to communicate with my socket (server's socket(?))
+		socket = new Socket("localhost", 7777);  /// change localhost to my ip address; want to communicate with my socket
 		System.out.println("Connection Successful");
 		
 		in = new DataInputStream(socket.getInputStream());
@@ -24,8 +24,8 @@ public class Client_1 {
 		String test = in.readUTF();
 		System.out.println("Message from server:" + test);
 		
-		out.writeUTF("this is a a test of sending data from client to server");
-		System.out.println("Message to server sent");
+		out.writeUTF("this is a a test of sendinf data from client to server");
+		
 	}
 
 }
